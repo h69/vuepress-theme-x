@@ -1,2 +1,3 @@
 # vuepress-theme-geek
-VuePress theme.
+
+VuePress 主题。
