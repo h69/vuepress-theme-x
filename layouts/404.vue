@@ -1,15 +1,16 @@
 <template>
-  <div>
-   
+   <div>
+    <h1>404</h1>
+    <router-link to="/">Take me home.</router-link>
   </div>
 </template>
 
 <script>
-import Footer from '../components/Footer'
-
 export default {
-  components: {
-    Footer: Footer,
-  },
+  
 }
 </script>
+
+<style lang="stylus" scoped>
+
+</style>

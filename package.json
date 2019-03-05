@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/h69/cvuepress-theme-geek/issues"
   },
-  "homepage": "https://github.com/h69/vuepress-theme-geek#readme"
+  "homepage": "https://github.com/h69/vuepress-theme-geek#readme",
+  "dependencies": {
+    "@vuepress/theme-default": "^1.0.0-alpha.40",
+    "prismjs": "^1.15.0"
+  }
 }
