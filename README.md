@@ -14,7 +14,7 @@ npm install vuepress-theme-x --save
 
 ## 使用
 在 `.vuepress` 下的 `config.js` 里增加以下字段即可：
-```
+```JavaScript
 module.exports = {
   ...
   theme: 'x',
