@@ -47,7 +47,6 @@ export default {
     },
   },
   mounted: function () {
-    console.log(this.$site)
     this.list = []
     for (let i = 0; i < this.$site.pages.length; i++) {
       let page = this.$site.pages[i]
