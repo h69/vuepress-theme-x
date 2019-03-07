@@ -2,7 +2,7 @@
 
 VuePress 主题。
 
-[点击预览](http://h69.github.io)
+[点击预览](https://h69.github.io)
 
 [![npm package](https://nodei.co/npm/vuepress-theme-x.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vuepress-theme-x)
 
