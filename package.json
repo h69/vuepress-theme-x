@@ -1,7 +1,7 @@
 {
-  "name": "vuepress-theme-geek",
+  "name": "vuepress-theme-x",
   "description": "VuePress theme.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {},
   "author": "",
@@ -10,17 +10,17 @@
     "vuepress",
     "theme",
     "vuepress-theme",
-    "geek",
+    "x",
     "blog"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/h69/vuepress-theme-geek.git"
+    "url": "git+https://github.com/h69/vuepress-theme-x.git"
   },
   "bugs": {
-    "url": "https://github.com/h69/cvuepress-theme-geek/issues"
+    "url": "https://github.com/h69/cvuepress-theme-x/issues"
   },
-  "homepage": "https://github.com/h69/vuepress-theme-geek#readme",
+  "homepage": "https://github.com/h69/vuepress-theme-x#readme",
   "dependencies": {
     "@vuepress/theme-default": "^1.0.0-alpha.40",
     "prismjs": "^1.15.0"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a class="button" :href="href" target="_blank">编辑</a>
+    <a class="button" :href="href" target="_blank" v-if="$site.themeConfig.editLinks">编辑</a>
 
     <Content />
   </div>
