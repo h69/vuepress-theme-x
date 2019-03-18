@@ -1,6 +1,6 @@
 # vuepress-theme-x
 
-VuePress theme。
+VuePress theme.
 
 [Preview](https://h69.github.io)
 
