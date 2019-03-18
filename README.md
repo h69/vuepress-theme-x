@@ -1,20 +1,20 @@
 # vuepress-theme-x
 
-VuePress 主题。
+VuePress theme。
 
-[点击预览](https://h69.github.io)
+[Preview](https://h69.github.io)
 
 [![npm package](https://nodei.co/npm/vuepress-theme-x.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vuepress-theme-x)
 
 
-## 起步
+## Installing
 ```
-npm install vuepress-theme-x --save
+npm install vuepress-theme-x
 ```
 
-## 使用
-在 `.vuepress` 下的 `config.js` 里增加以下字段即可：
+## Usage
 ```JavaScript
+// config.js
 module.exports = {
   ...
   theme: 'x',
@@ -22,7 +22,7 @@ module.exports = {
 }
 ``` 
 
-## 范例
+## Examples
 ```
 .
 └── docs 
@@ -43,9 +43,9 @@ module.exports = {
   title: 'x',
   theme: 'x',
   themeConfig: {
-    editLinkText: '编辑',
+    editLinkText: 'Edit',
     editLinks: true,
-    repo: 'your username/your repo',
+    repo: 'username/repo',
     nav: [
       {
         text: 'github',
