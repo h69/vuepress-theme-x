@@ -33,6 +33,8 @@ export default {
 
 a
   color $textColor
+  transition color 0.2s ease
+  border-bottom none
   &:hover
     color $accentColor
 </style>

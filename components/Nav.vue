@@ -26,7 +26,11 @@ export default {
   font-size 12px
   border-radius 3px
   background-color lighten($accentColor, 90%)
+  transition background-color 0.2s ease
   &:hover
     background-color lighten($accentColor, 80%)
+
+  a
+    border-bottom none
 </style>
   

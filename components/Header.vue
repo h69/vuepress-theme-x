@@ -28,11 +28,12 @@ export default {
   cursor pointer
   margin 0 0 20px 0
 
-.link 
+a.link 
   cursor pointer
   margin 0 8px
+  border-bottom none
 
-.link img
-  width 15px
-  height 15px
+  img
+    width 15px
+    height 15px
 </style>

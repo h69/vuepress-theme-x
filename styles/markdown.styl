@@ -1,16 +1,18 @@
 h1, h2, h3, h4, h5, h6
   font-weight 600
   line-height 1.25
-  &:hover .header-anchor
-    opacity: 1
+  // &:hover .header-anchor
+  //   opacity: 1
 
 h1
   font-size 2.2rem
+  margin-bottom 45px
 
 h2
   font-size 1.65rem
-  padding-bottom .3rem
+  padding-bottom 0.3rem
   border-bottom 1px solid $borderColor
+  margin 60px 0 30px 0
 
 h3
   font-size 1.35rem
@@ -26,8 +28,13 @@ a
   font-weight 500
   color $accentColor
   text-decoration none
+  border-bottom 2px solid transparent
+  transition color 0.2s ease, border-color 0.2s ease
+  &:hover
+    border-bottom-color $accentColor
 
 a.header-anchor
+  display none
   font-size 0.85em
   float left
   margin-left -0.87em
@@ -69,7 +76,6 @@ code, kbd, .line-number
 p, ul, ol
   line-height 1.7
 
-
 table
   border-collapse collapse
   margin 1rem 0
@@ -85,4 +91,29 @@ th, td
   border 1px solid #dfe2e5
   padding .6em 1em
 
+/* Override VuePress */
+.icon.outbound
+  display none !important
+
+/* Override Prism */
+div[class*="language-"]
+  background #f8f8f8 !important
+  &:before 
+    color #ccc !important
+  &:after
+    border-right 1px solid #EEE !important
+    background #f8f8f8 !important
+
+  .line-numbers-wrapper
+    color #ccc !important
   
+  pre[class*="language-"]
+    background transparent !important
+
+    code 
+      background transparent !important
+      color $textColor !important
+
+      span
+        background transparent !important
+

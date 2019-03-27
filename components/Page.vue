@@ -21,8 +21,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.button
+a.button
   cursor pointer
   color #999
   font-size 14px
+  border-bottom none
 </style>
