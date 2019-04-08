@@ -34,6 +34,9 @@ module.exports = {
     ├── Tag 2
     |   └── Document 2
     |       └── README.md
+    ├── Tag 3
+    |   └── Document 3
+    |       └── README.md
     └── README.md 
 ```
 
@@ -46,11 +49,13 @@ module.exports = {
     editLinkText: 'Edit',
     editLinks: true,
     repo: 'username/repo',
+    search: true,
+    searchMaxSuggestions: -1,
     nav: [
       {
         text: 'github',
         link: 'https://github.com',
-      }
+      },
     ],
     sidebar: {
       '/': [
@@ -64,6 +69,12 @@ module.exports = {
           title: 'Tag 2',
           children: [
             '/Tag 2/Document 2/',
+          ],
+        },
+        {
+          title: 'Tag 3',
+          children: [
+            '/Tag 3/Document 3/',
           ],
         },
       ],

@@ -1,6 +1,9 @@
 <template>
   <nav class="navs">
-    <div class="nav" v-for="(nav, index) in navs" :key="index" @click="onclick(nav)"><a>{{ nav }}</a></div>
+    <a class="nav" v-for="(nav, index) in navs" :key="index" :href="nav.link" target="_blank">
+      <img v-if="nav.text === 'github'" src="../images/github.png" />
+      <span v-else>{{ nav.text }}</span>
+    </a>
   </nav>
 </template>
 
@@ -15,22 +18,14 @@ export default {
 
 <style lang="stylus" scoped>
 .navs
-  margin 50px 0 50px 0
-  overflow auto
-  
-.nav
-  float left
-  cursor pointer
-  margin 5px 20px 5px 0
-  padding 4px 10px 4px 10px
-  font-size 12px
-  border-radius 3px
-  background-color lighten($accentColor, 90%)
-  transition background-color 0.2s ease
-  &:hover
-    background-color lighten($accentColor, 80%)
+  margin 0 auto 50px auto
+  text-align center
 
-  a
-    border-bottom none
+a.nav 
+  cursor pointer
+  margin 0 8px
+  border-bottom none
+  img
+    width 15px
+    height 15px
 </style>
-  
