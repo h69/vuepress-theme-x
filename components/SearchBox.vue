@@ -98,37 +98,11 @@ export default {
           res.push(Object.assign({}, p, {
             tag: decodeURI(p.path.split('/')[1])
           }))
-
-          if (p.headers) {
-            for (let j = 0; j < p.headers.length; j++) {
-              if (max !== -1 && res.length >= max) break
-
-              const h = p.headers[j]
-              res.push(Object.assign({}, p, {
-                tag: decodeURI(p.path.split('/')[1]),
-                path: p.path + '#' + h.slug,
-                header: h
-              }))
-            }
-          } 
         } else if (matches(p)) {
           // res.push(p)
           res.push(Object.assign({}, p, {
             tag: decodeURI(p.path.split('/')[1])
           }))
-
-          if (p.headers) {
-            for (let j = 0; j < p.headers.length; j++) {
-              if (max !== -1 && res.length >= max) break
-
-              const h = p.headers[j]
-              res.push(Object.assign({}, p, {
-                tag: decodeURI(p.path.split('/')[1]),
-                path: p.path + '#' + h.slug,
-                header: h
-              }))
-            }
-          } 
         } else if (p.headers) {
           for (let j = 0; j < p.headers.length; j++) {
             // if (res.length >= max) break
@@ -289,8 +263,8 @@ export default {
         font-weight 400
     &.focused
       background-color #f3f4f5
-      a
-        color $accentColor
+      // a
+      //   color $accentColor
 
 // @media (max-width: $MQNarrow)
 //   .search-box
