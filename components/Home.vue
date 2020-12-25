@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="item" v-for="(item, index) in list" :key="index">
+    <Content v-if="!list" />
+    <div v-else class="item" v-for="(item, index) in list" :key="index">
       <router-link class="title" :to="item.path">{{ item.title }}</router-link>
       <div class="tag">{{ item.tag }}</div>
     </div>

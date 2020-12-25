@@ -63,6 +63,9 @@ export default {
           title: page.title,
           path: page.path,
         })
+      } else if (page.frontmatter.home === undefined || page.frontmatter.home === null || page.frontmatter.home === false) {
+          this.list = undefined
+          break
       }
     }
     this.navs = this.$site.themeConfig.nav
@@ -87,6 +90,9 @@ export default {
               path: page.path,
             })
           }
+        } else if (arg === "/" && (page.frontmatter.home === undefined || page.frontmatter.home === null || page.frontmatter.home === false)) {
+            this.list = undefined
+            break
         }
       }
       this.$router.push({ path: '/' })
