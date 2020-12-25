@@ -6,27 +6,27 @@ VuePress theme.
 
 [![npm package](https://nodei.co/npm/vuepress-theme-x.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vuepress-theme-x)
 
-
 ## Installing
+
 ```
 npm install vuepress-theme-x
 ```
 
 ## Usage
+
 ```JavaScript
 // config.js
 module.exports = {
-  ...
-  theme: 'x',
-  ...
+  theme: 'x'
 }
-``` 
+```
 
 ## Examples
+
 ```
 .
-└── docs 
-    ├── .vuepress 
+└── docs
+    ├── .vuepress
     |   └── config.js
     ├── Tag 1
     |   └── Document 1
@@ -37,7 +37,7 @@ module.exports = {
     ├── Tag 3
     |   └── Document 3
     |       └── README.md
-    └── README.md 
+    └── README.md
 ```
 
 ```JavaScript
@@ -82,4 +82,5 @@ module.exports = {
   },
 }
 ```
+
 ![](./vuepress-theme-x.png)
